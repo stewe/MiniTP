@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="src" path="test/java"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="lib" path="resources/lib/ohua-0.2.1.jar"/>
+	<classpathentry kind="lib" path="resources/lib/quickfixj-core-1.5.3.jar"/>
+	<classpathentry kind="lib" path="resources/lib/quickfixj-msg-fix50-1.5.3.jar"/>
+	<classpathentry kind="lib" path="resources/lib/quickfixj-msg-fixt11-1.5.3.jar"/>
+	<classpathentry kind="lib" path="resources/lib/jzmq-3.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

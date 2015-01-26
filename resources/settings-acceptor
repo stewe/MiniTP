@@ -1,0 +1,57 @@
+# default settings for sessions
+[DEFAULT]
+ConnectionType=acceptor
+ReconnectInterval=60
+SenderCompID=MINITP-ACCEPTOR
+TransportDataDictionary=./resources/datadictionaries/FIXT11.xml
+AppDataDictionary=./resources/datadictionaries/FIX50.xml
+
+# logging definition
+[LOGGING]
+FileLogPath=./output/log
+
+# msg storage definition
+[STORAGE]
+PersistMessages=Y
+FileStorePath=./output/store
+
+# session definition for requester gateway
+[SESSION]
+TargetCompID=MINITP-REQ
+BeginString=FIXT.1.1
+DefaultApplVerID=FIX.5.0
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=60
+SocketAcceptPort=9821
+
+# session definition for example requester
+[SESSION]
+TargetCompID=MINITP-PROV
+BeginString=FIXT.1.1
+DefaultApplVerID=FIX.5.0
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=60
+SocketAcceptPort=9822
+
+
+# session definition for example requester
+[SESSION]
+TargetCompID=REQUESTER-CLIENT
+BeginString=FIXT.1.1
+DefaultApplVerID=FIX.5.0
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=60
+SocketAcceptPort=9823
+
+# session definition for example provider
+[SESSION]
+TargetCompID=PROVIDER-CLIENT
+BeginString=FIXT.1.1
+DefaultApplVerID=FIX.5.0
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=60
+SocketAcceptPort=9824

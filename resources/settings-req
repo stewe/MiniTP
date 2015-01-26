@@ -1,0 +1,27 @@
+# default settings for sessions
+[DEFAULT]
+ConnectionType=initiator
+SenderCompID=MINITP-REQ
+TargetCompID=MINITP-ACCEPTOR
+SocketConnectHost=localhost
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=300
+ReconnectInterval=5
+TransportDataDictionary=./resources/datadictionaries/FIXT11.xml
+AppDataDictionary=./resources/datadictionaries/FIX50.xml
+
+# session definition
+[SESSION]
+BeginString=FIXT.1.1
+DefaultApplVerID=FIX.5.0 
+SocketConnectPort=9821
+
+# logging definition
+[LOGGING]
+FileLogPath=./output/log
+
+# msg storage definition
+[STORAGE]
+PersistMessages=Y
+FileStorePath=./output/store

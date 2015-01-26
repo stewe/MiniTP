@@ -1,0 +1,128 @@
+digraph FLOW {
+labelloc=top;
+rankdir=LR;
+36 [shape=rectangle, fontsize=6, label="name: deserialize-minitp-100 id: 36"];
+37 [shape=rectangle, fontsize=6, label="name: accept-zeromq-101 id: 37"];
+38 [shape=rectangle, fontsize=6, label="name: parse-request-type-102 id: 38"];
+39 [shape=rectangle, fontsize=6, label="name: ifThenElse-104 id: 39"];
+40 [shape=rectangle, fontsize=6, label="name: log-entry-106 id: 40"];
+41 [shape=rectangle, fontsize=6, label="name: build-admin-log-entry-107 id: 41"];
+42 [shape=rectangle, fontsize=6, label="name: set-trading-108 id: 42"];
+43 [shape=rectangle, fontsize=6, label="name: parse-admin-request-109 id: 43"];
+44 [shape=rectangle, fontsize=6, label="name: ifThenElse-111 id: 44"];
+45 [shape=rectangle, fontsize=6, label="name: parse-rfs-request-113 id: 45"];
+46 [shape=rectangle, fontsize=6, label="name: log-entry-114 id: 46"];
+47 [shape=rectangle, fontsize=6, label="name: build-rfs-log-entry-115 id: 47"];
+48 [shape=rectangle, fontsize=6, label="name: send-zeromq-116 id: 48"];
+49 [shape=rectangle, fontsize=6, label="name: serialize-minitp-117 id: 49"];
+50 [shape=rectangle, fontsize=6, label="name: build-rfs-msg-118 id: 50"];
+51 [shape=rectangle, fontsize=6, label="name: ifThenElse-120 id: 51"];
+52 [shape=rectangle, fontsize=6, label="name: parse-price-info-122 id: 52"];
+53 [shape=rectangle, fontsize=6, label="name: log-entry-123 id: 53"];
+54 [shape=rectangle, fontsize=6, label="name: build-price-log-entry-124 id: 54"];
+55 [shape=rectangle, fontsize=6, label="name: send-zeromq-125 id: 55"];
+56 [shape=rectangle, fontsize=6, label="name: serialize-minitp-126 id: 56"];
+57 [shape=rectangle, fontsize=6, label="name: build-price-msg-127 id: 57"];
+58 [shape=rectangle, fontsize=6, label="name: ifThenElse-129 id: 58"];
+59 [shape=rectangle, fontsize=6, label="name: parse-order-request-131 id: 59"];
+60 [shape=rectangle, fontsize=6, label="name: log-entry-132 id: 60"];
+61 [shape=rectangle, fontsize=6, label="name: build-order-log-entry-133 id: 61"];
+62 [shape=rectangle, fontsize=6, label="name: send-zeromq-134 id: 62"];
+63 [shape=rectangle, fontsize=6, label="name: serialize-minitp-135 id: 63"];
+64 [shape=rectangle, fontsize=6, label="name: build-order-msg-136 id: 64"];
+65 [shape=rectangle, fontsize=6, label="name: ifThenElse-138 id: 65"];
+66 [shape=rectangle, fontsize=6, label="name: pipe-140 id: 66"];
+67 [shape=rectangle, fontsize=6, label="name: log-entry-141 id: 67"];
+68 [shape=rectangle, fontsize=6, label="name: build-report-log-entry-142 id: 68"];
+69 [shape=rectangle, fontsize=6, label="name: send-zeromq-143 id: 69"];
+70 [shape=rectangle, fontsize=6, label="name: serialize-minitp-144 id: 70"];
+71 [shape=rectangle, fontsize=6, label="name: add-type-to-list-145 id: 71"];
+36 -> 38 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+37 -> 36 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+38 -> 58 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+38 -> 45 [label="(out-1, in-0,
+FORWARD_EDGE)"];
+38 -> 59 [label="(out-2, in-0,
+FORWARD_EDGE)"];
+38 -> 39 [label="(out-3, in-0,
+FORWARD_EDGE)"];
+38 -> 51 [label="(out-4, in-0,
+FORWARD_EDGE)"];
+38 -> 65 [label="(out-5, in-0,
+FORWARD_EDGE)"];
+38 -> 52 [label="(out-6, in-0,
+FORWARD_EDGE)"];
+38 -> 66 [label="(out-7, in-0,
+FORWARD_EDGE)"];
+38 -> 43 [label="(out-8, in-0,
+FORWARD_EDGE)"];
+38 -> 44 [label="(out-9, in-0,
+FORWARD_EDGE)"];
+39 -> 43 [label="(out-0, in-1,
+FORWARD_EDGE)"];
+39 -> 44 [label="(out-1, in-1,
+FORWARD_EDGE)"];
+41 -> 40 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+42 -> 41 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+43 -> 42 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+44 -> 45 [label="(out-0, in-1,
+FORWARD_EDGE)"];
+44 -> 51 [label="(out-1, in-1,
+FORWARD_EDGE)"];
+45 -> 47 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+45 -> 50 [label="(out-1, in-0,
+FORWARD_EDGE)"];
+47 -> 46 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+49 -> 48 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+50 -> 49 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+51 -> 58 [label="(out-0, in-1,
+FORWARD_EDGE)"];
+51 -> 52 [label="(out-1, in-1,
+FORWARD_EDGE)"];
+52 -> 54 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+52 -> 57 [label="(out-1, in-0,
+FORWARD_EDGE)"];
+54 -> 53 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+56 -> 55 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+57 -> 56 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+58 -> 59 [label="(out-0, in-1,
+FORWARD_EDGE)"];
+58 -> 65 [label="(out-1, in-1,
+FORWARD_EDGE)"];
+59 -> 61 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+59 -> 64 [label="(out-1, in-0,
+FORWARD_EDGE)"];
+61 -> 60 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+63 -> 62 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+64 -> 63 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+65 -> 66 [label="(out-0, in-1,
+FORWARD_EDGE)"];
+66 -> 71 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+66 -> 68 [label="(out-1, in-0,
+FORWARD_EDGE)"];
+68 -> 67 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+70 -> 69 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+71 -> 70 [label="(out-0, in-0,
+FORWARD_EDGE)"];
+}
