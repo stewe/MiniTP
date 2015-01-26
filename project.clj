@@ -1,6 +1,6 @@
 (defproject minitp "0.1.0-SNAPSHOT"
-  :description "An online trading platform implemented in Ohua."
-  :url "http://example.com/FIXME"
+  :description "This is an example project that shows how one can create a simple trading platform with Ohua."
+  :url "https://bitbucket.org/stefan_we/minitp"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
