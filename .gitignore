@@ -1,7 +1,6 @@
 /target
 /bin
 /output
-/.project
 /.settings
 /.lein-failures
 /.lein-repl-history
